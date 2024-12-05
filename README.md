@@ -13,8 +13,11 @@
 **These instructions will help you set up and run the project on your local machine for development and testing purposes**
 
 **Installation**
-Step-1: Install Node.js
-First, ensure you have Node.js installed. You can download it [here](https://nodejs.org/en/).
+Step-1:
+Make sure you have the following installed on your system: 
+[Node.js](https://nodejs.org/): A JavaScript runtime environment.
+[npm](https://www.npmjs.com/): Node Package Manager (usually comes with Node.js).
+[Git](https://git-scm.com/): Version control
 
 Step-2: Set Up Project
 Open Visual Studio Code
@@ -31,10 +34,16 @@ cd online-library
 Step-4 Install dependencies using npm 
 npm install
 
-Step-5 Create Folder and File 
+Step-5: Start the Development Server
+npm start
+
+Then open  http://localhost:3000 in your browser to view the app.
+
+Step-6 Create Folder and File 
  **Folder Structure**
 
 online-library/
+node_modules/
 public/
 index.html
 src/        
@@ -62,17 +71,6 @@ styles.css           # Additional styles
 package-lock.json        # Lockfile for npm dependencies
 package.json             # Project dependencies and scripts
 README.md                # Instructions on how to run the application
-
-Step-6: Start the Development Server
-npm start
-
-Then open  http://localhost:3000 in your browser to view the app.
-
-**Built With**
- React
- React Router
- Redux 
- Form Validation
 
  **Github Link**
 GitHub repository containing the project ( https://github.com/cupadhyayy/online-library.git)
