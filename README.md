@@ -26,19 +26,12 @@ Create a New React App:
 npx create-react-app online-library
 
 Step-3: Navigate to Your Project Directory
-cd online-library
+cd online-library 
 
-Step-4: Start the Development Server
-npm start
+Step-4 Install dependencies using npm 
+npm install
 
-Then open  http://localhost:3000 in your browser to view the app.
-
-**Built With**
- React
- React Router
- Redux 
- Form Validation
-
+Step-5 Create Folder and File 
  **Folder Structure**
 
 online-library/
@@ -70,5 +63,16 @@ package-lock.json        # Lockfile for npm dependencies
 package.json             # Project dependencies and scripts
 README.md                # Instructions on how to run the application
 
+Step-6: Start the Development Server
+npm start
+
+Then open  http://localhost:3000 in your browser to view the app.
+
+**Built With**
+ React
+ React Router
+ Redux 
+ Form Validation
+
  **Github Link**
-GitHub repository containing the project (https://github.com/cupadhyayy/online-library.git )
+GitHub repository containing the project ( https://github.com/cupadhyayy/online-library.git)
