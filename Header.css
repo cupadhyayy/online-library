@@ -1,0 +1,103 @@
+/* General navbar styling */
+.navbar {
+  background-color: #13333a; 
+  padding: 15px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;  /* Default layout is horizontal */
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #00ff37; /* Hover effect for links */
+}
+
+/* Hamburger menu icon styles */
+.menu-icon {
+  display: none; /* Hidden by default (for large screens) */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger icon transform to X shape when active */
+.menu-icon.open .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  /* Initially hide nav-links on small screens */
+  .nav-links {
+    display: none;
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    text-align: center;
+    background-color:#13333a; 
+    padding-top: 20px; /* Some space at the top */
+  }
+
+  .nav-links.active {
+    display: block; /* Show links when menu is open */
+  }
+
+  /* Make hamburger menu visible on small screens */
+  .menu-icon {
+    display: flex;
+  }
+  
+  /* Adjust the links when the menu is active */
+  .nav-links li {
+    width: 100%; /* Make each link take the full width */
+    padding: 15px 0;
+  }
+
+  /* Adjust the link text size for mobile */
+  .nav-links a {
+    font-size: 20px;
+  }
+}
